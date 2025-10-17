@@ -14,6 +14,8 @@ public class PremiumResponse {
     /** The calculated insurance premium amount */
     private Double calculatedPremium;
 
+     public PremiumResponse() {}
+     
     /**
      * Constructs a new PremiumResponse with the specified calculated premium.
      * 
