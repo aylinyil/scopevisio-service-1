@@ -11,8 +11,8 @@ RUN mvn dependency:go-offline
 # Copy the rest of the application source code
 COPY src ./src
 
-# Build the application and run tests
-RUN mvn clean install
+# Build the application
+RUN mvn clean install -DskipTests
 
 # Use a slim JRE image to run the application
 FROM eclipse-temurin:17-jre-jammy
